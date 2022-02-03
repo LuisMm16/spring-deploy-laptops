@@ -5,11 +5,13 @@ import com.example.obspringejerciciossesiones456.repository.LaptopRepository;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 
 @SpringBootApplication
 public class ObSpringEjerciciosSesiones456Application {
 
 	public static void main(String[] args) {
+
 		ApplicationContext context = SpringApplication.run(ObSpringEjerciciosSesiones456Application.class, args);
 		LaptopRepository laptopRepository = context.getBean(LaptopRepository.class);
 
